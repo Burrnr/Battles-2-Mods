@@ -429,7 +429,7 @@
             "name": "LOC_UPGRADE_NAME_Sharp_Shots",
             "description": "LOC_UPGRADE_DESC_Sharp_Shots",
             "parent_id": 0,
-            "cost": 100.0,
+            "cost": 600.0,
             "cost_xp": 0.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -446,7 +446,7 @@
             "name": "LOC_UPGRADE_NAME_Razor_Sharp_Shots",
             "description": "LOC_UPGRADE_DESC_Razor_Sharp_Shots",
             "parent_id": 1,
-            "cost": 200.0,
+            "cost": 800.0,
             "cost_xp": 0.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -462,7 +462,7 @@
             "name": "LOC_UPGRADE_NAME_Spike-o-pult",
             "description": "LOC_UPGRADE_DESC_Spike-o-pult",
             "parent_id": 2,
-            "cost": 300.0,
+            "cost": 1100.0,
             "cost_xp": 2100.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -497,7 +497,7 @@
             "name": "LOC_UPGRADE_NAME_Juggernaut",
             "description": "LOC_UPGRADE_DESC_Juggernaut",
             "parent_id": 3,
-            "cost": 1800.0,
+            "cost": 3800.0,
             "cost_xp": 7500.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -542,7 +542,7 @@
             "name": "LOC_UPGRADE_NAME_Quick_Shots",
             "description": "LOC_UPGRADE_DESC_Quick_Shots",
             "parent_id": 0,
-            "cost": 100.0,
+            "cost": 700.0,
             "cost_xp": 0.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -559,7 +559,7 @@
             "name": "LOC_UPGRADE_NAME_Very_Quick_Shots",
             "description": "LOC_UPGRADE_DESC_Very_Quick_Shots",
             "parent_id": 6,
-            "cost": 190.0,
+            "cost": 900.0,
             "cost_xp": 0.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -576,13 +576,17 @@
             "name": "LOC_UPGRADE_NAME_Triple_Shot",
             "description": "LOC_UPGRADE_DESC_Triple_Shot",
             "parent_id": 7,
-            "cost": 350.0,
+            "cost": 2000.0,
             "cost_xp": 2000.0,
             "requires_prompt": false,
             "variable_modifiers": [
                 {
                     "key": "dart_damage",
                     "expression": "x + 3"
+                },
+                {
+                    "key": "weapon_ref",
+                    "expression": "18"
                 }
             ]
         },
@@ -592,7 +596,7 @@
             "name": "LOC_UPGRADE_NAME_Super_Monkey_Fan_Club",
             "description": "LOC_UPGRADE_DESC_Super_Monkey_Fan_Club",
             "parent_id": 8,
-            "cost": 8000.0,
+            "cost": 24000.0,
             "cost_xp": 9500.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -618,7 +622,7 @@
                     "expression": "x + 5"
                 },
                 {
-                    "key": "exclude_immunity",
+                    "key": "dart_exclude_immunity",
                     "expression": "EBloonType.Lead|EBloonType.DDT"
                 }
                 
@@ -630,7 +634,7 @@
             "name": "LOC_UPGRADE_NAME_Long_Range_Darts",
             "description": "LOC_UPGRADE_DESC_Long_Range_Darts",
             "parent_id": 0,
-            "cost": 90.0,
+            "cost": 300.0,
             "cost_xp": 0.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -646,7 +650,7 @@
             "name": "LOC_UPGRADE_NAME_Enhanced_Eyesight",
             "description": "LOC_UPGRADE_DESC_Enhanced_Eyesight",
             "parent_id": 11,
-            "cost": 200.0,
+            "cost": 500.0,
             "cost_xp": 0.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -666,7 +670,7 @@
             "name": "LOC_UPGRADE_NAME_Crossbow",
             "description": "LOC_UPGRADE_DESC_Crossbow",
             "parent_id": 12,
-            "cost": 575.0,
+            "cost": 2575.0,
             "cost_xp": 1900.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -684,7 +688,7 @@
                     "expression": "x+30"
                 },
                 {
-                    "key": "exclude_immunity",
+                    "key": "dart_exclude_immunity",
                     "expression": "EBloonType.Lead|EBloonType.DDT"
                 }
             ]
@@ -695,7 +699,7 @@
             "name": "LOC_UPGRADE_NAME_Sharp_Shooter",
             "description": "LOC_UPGRADE_DESC_Sharp_Shooter",
             "parent_id": 13,
-            "cost": 2000.0,
+            "cost": 6000.0,
             "cost_xp": 12000.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -717,7 +721,7 @@
             "name": "LOC_UPGRADE_NAME_Crossbow_Master",
             "description": "LOC_UPGRADE_DESC_Crossbow_Master",
             "parent_id": 14,
-            "cost": 25000.0,
+            "cost": 14000.0,
             "cost_xp": 35000.0,
             "requires_prompt": false,
             "variable_modifiers": [

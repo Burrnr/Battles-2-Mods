@@ -416,7 +416,7 @@
             "id": 0,
             "name": "LOC_TOWER_NAME_BombShooter",
             "description": "LOC_TOWER_DESC_BombShooter",
-            "cost": 600.0,
+            "cost": 1200.0,
             "unlock_cost_monkey_money": 0.0,
             "props": {
                 "type": "STowerProps",
@@ -468,13 +468,13 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_Bigger_Bombs",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_Bigger_Bombs",
             "parent_id": 0,
-            "cost": 350.0,
+            "cost": 700.0,
             "cost_xp": 0.0,
             "requires_prompt": false,
             "variable_modifiers": [
                 {
                     "key": "aoe_radius",
-                    "expression": "x+t*0.5"
+                    "expression": "x+x*0.5"
                 },
                 {
                     "key": "aoe_pierce",
@@ -500,10 +500,14 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_Heavy_Bombs",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_Heavy_Bombs",
             "parent_id": 1,
-            "cost": 650.0,
+            "cost": 1300.0,
             "cost_xp": 0.0,
             "requires_prompt": false,
             "variable_modifiers": [
+                {
+                    "key": "aoe_radius",
+                    "expression": "x+x*3"
+                },
                 {
                     "key": "aoe_damage",
                     "expression": "x+x"
@@ -524,7 +528,7 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_Really_Big_Bombs",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_Really_Big_Bombs",
             "parent_id": 2,
-            "cost": 1200.0,
+            "cost": 3000.0,
             "cost_xp": 3000.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -560,7 +564,7 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_Bloon_Impact",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_Bloon_Impact",
             "parent_id": 3,
-            "cost": 3600.0,
+            "cost": 10000.0,
             "cost_xp": 10000.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -596,10 +600,7 @@
             "cost_xp": 37500.0,
             "requires_prompt": false,
             "variable_modifiers": [
-                {
-                    "key": "exclude_stun_type",
-                    "expression": "EBloonType.BAD"
-                },
+                
                 {
                     "key": "stun_length",
                     "expression": "2"
@@ -632,13 +633,13 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_Faster_Reload",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_Faster_Reload",
             "parent_id": 0,
-            "cost": 250.0,
+            "cost": 2500.0,
             "cost_xp": 0.0,
             "requires_prompt": false,
             "variable_modifiers": [
                 {
                     "key": "reload_time",
-                    "expression": "x-b*0.25"
+                    "expression": "x-x*0.50"
                 }
             ]
         },
@@ -648,7 +649,7 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_Missile_Launcher",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_Missile_Launcher",
             "parent_id": 6,
-            "cost": 400.0,
+            "cost": 1250.0,
             "cost_xp": 0.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -663,7 +664,7 @@
                 },
                 {
                     "key": "reload_time",
-                    "expression": "x-b*0.2"
+                    "expression": "x-x*0.35"
                 }
             ]
         },
@@ -673,7 +674,7 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_MOAB_Mauler",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_MOAB_Mauler",
             "parent_id": 7,
-            "cost": 900.0,
+            "cost": 9000.0,
             "cost_xp": 2700.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -701,7 +702,7 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_MOAB_Assassin",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_MOAB_Assassin",
             "parent_id": 8,
-            "cost": 3200.0,
+            "cost": 32000.0,
             "cost_xp": 10000.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -726,7 +727,7 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_MOAB_Eliminator",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_MOAB_Eliminator",
             "parent_id": 9,
-            "cost": 25000.0,
+            "cost": 100000.0,
             "cost_xp": 35000.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -762,7 +763,7 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_Extra_Range",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_Extra_Range",
             "parent_id": 0,
-            "cost": 200.0,
+            "cost": 2000.0,
             "cost_xp": 0.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -778,7 +779,7 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_Frag_Bombs",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_Frag_Bombs",
             "parent_id": 11,
-            "cost": 300.0,
+            "cost": 1500.0,
             "cost_xp": 0.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -795,7 +796,7 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_Cluster_Bombs",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_Cluster_Bombs",
             "parent_id": 12,
-            "cost": 800.0,
+            "cost": 12000.0,
             "cost_xp": 2500.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -811,7 +812,7 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_Recursive_Cluster",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_Recursive_Cluster",
             "parent_id": 13,
-            "cost": 3200.0,
+            "cost": 32000.0,
             "cost_xp": 10000.0,
             "requires_prompt": false,
             "variable_modifiers": [
@@ -827,7 +828,7 @@
             "name": "LOC_UPGRADE_NAME_BOMB_SHOOTER_Bomb_Blitz",
             "description": "LOC_UPGRADE_DESC_BOMB_SHOOTER_Bomb_Blitz",
             "parent_id": 14,
-            "cost": 35000.0,
+            "cost": 70000.0,
             "cost_xp": 25000.0,
             "requires_prompt": false,
             "variable_modifiers": [
