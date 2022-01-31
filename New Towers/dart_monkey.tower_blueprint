@@ -622,8 +622,8 @@
                     "expression": "x + 5"
                 },
                 {
-                    "key": "dart_exclude_immunity",
-                    "expression": "EBloonType.Lead|EBloonType.DDT"
+                    "key": "exclude_features",
+                    "expression": "x&~EBloonType.Lead|x&~EBloonType.DDT"
                 }
                 
             ]
@@ -688,8 +688,8 @@
                     "expression": "x+30"
                 },
                 {
-                    "key": "dart_exclude_immunity",
-                    "expression": "EBloonType.Lead|EBloonType.DDT"
+                    "key": "exclude_features",
+                    "expression": "x&~EBloonType.Lead|x&~EBloonType.DDT"
                 }
             ]
         },

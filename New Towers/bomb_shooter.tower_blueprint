@@ -665,6 +665,10 @@
                 {
                     "key": "reload_time",
                     "expression": "x-x*0.35"
+                },
+                {
+                    "key": "can_target_camo",
+                    "expression": "true"
                 }
             ]
         },
